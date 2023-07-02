@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card purchase</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="small">
+        <img class="smallsquare" src="./images/bg-main-desktop.png" />
+        <div class="smallsquare cards">
+            <div>
+                <img class="logo" src="./images/card-logo.svg">
+                <div id="digit" class="digits">
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+            </div>
+            <div  class="nameyear">
+                <div id="name" class="name">Felicia Liere</div>
+                <div id="year" class="year">01/09</div>
+            </div>
+          <img class="card1" src="./images/bg-card-front.png" />
+        </div>
+          <img class="card2" src="./images/bg-card-back.png" />
+        </div>
+      </div>
+      <div class="bigsquare">
+        <div class="formcontainer">
+          <form id="form">
+            <label class="field" id="HolderName"
+              >CARDHOLDER NAME<input
+                class="field details"
+                type="text"
+                id="cardHolder"
+                placeholder="Enter cardholder name ..."
+                required
+            /></label>
+            <label class="field" id="Number"
+              >CARD NUMBER<input
+                class="field details"
+                type="text"
+                id="cardNumber"
+                placeholder="Enter card number ..."
+                required
+            />
+            <p class="error" id="errorText">Wrong format,numbers only</p>
+        </label>
+            <label class="exp"
+              ><div class=last>
+                <div class="my">EXP. DATE (MM/YY)</div> <div class="cv">CVC</div>
+            </div>
+              <div class="exp input">
+                <input class="month" id="month" type="number" placeholder="MM" required />
+                
+                <input class="year" id="year" type="number" placeholder="YY" required />
+                <input class="cvc" id="cvc" type="number" placeholder="e.g 524" required />
+              </div>
+              <div class="cantBeBlank">
+              <p id="blank" class="blank1">Can't be blank</p>
+              <p id="blank" class="blank2">Can't be blank</p>
+            </div>
+            
+            </label>
+
+            <button class="confirm" id="confirm" type="submit">Confirm</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
