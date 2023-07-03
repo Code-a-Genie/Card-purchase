@@ -64,8 +64,16 @@ body{
     z-index:9;
     margin-top:190px;
 }
-.nameyear{
+#nameyear{
     display:flex;
+}
+.card2{
+    position:relative;
+}
+.secure{
+    position:absolute;
+    z-index:15;
+   
 }
 
 
