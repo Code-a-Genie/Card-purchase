@@ -127,4 +127,7 @@ button{
     display:flex;
     justify-content: space-between;
 }
+.errorMessage{
+    display:none;
+}
 /* thank you page */
